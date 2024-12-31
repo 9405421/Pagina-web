@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
 
-
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -9,21 +8,21 @@
     font-size: 20px;
 }
 
-body{
+body {
     background-color: #d6f9ff;
 }
 
-main .logo2{
+main .logo2 {
     height: 70px;
     width: auto;
 }
 
-main .logo3{
-    height: 70px;
+main .logo3 {
+    height:20px;
     width: auto;
 }
 
-.header{
+.header {
     background-color: #98adb6;
     display: flex;
     justify-content: space-between;
@@ -32,159 +31,229 @@ main .logo3{
     padding: 5px 10%;
 }
 
-.header .logo{
+.header .logo {
     cursor: pointer;
 }
 
-.header .logo img{
+.header .logo img {
     height: 100px;
     width: auto;
     margin-top: 10px;
     transition: all 0.3s;
 }
 
-.header .logo img:hover{
+.header .logo img:hover {
     transform: scale(1.2);
 }
 
-.header .nav-links{
+.header .nav-links {
     list-style: none;
 }
 
-.header .nav-links li{
+.header .nav-links li {
     display: inline-block;
     padding: 0 20px;
 }
 
-.header .nav-links li:hover{
+.header .nav-links li:hover {
     transform: scale(1.1);
 }
 
-.header .nav-links a{
+.header .nav-links a {
     font-size: 700;
     color: #404549;
     text-decoration: none;
 }
 
-.header .nav-links a:hover{
+.header .nav-links a:hover {
     color: #121214;
 }
 
-
-header h1{
+header h1 {
     font-size: 32px;
 }
 
-main{
-    margin: 50px auto; /* Centra el contenido verticalmente con margen superior */
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 27px;
+}
+
+main {
+    margin: 50px auto;
     width: 100%;
-    padding: 20px; /* Agrega un poco de espacio interno */
-    max-width: 90%; /* Limita el ancho del contenido */
-    text-align: center; /* Centra el texto dentro del main */
-    background-color: #98adb6; /* Color de fondo opcional para destacar el contenido */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra para resaltar */
-    flex: 1; 
+    padding: 20px;
+    max-width: 90%;
+    text-align: center;
+    background-color: #98adb6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
     margin-bottom: 20px;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
+
 footer {
-    background-color: #98adb6; /* Fondo para diferenciar */
-    color: rgb(0, 0, 0); /* Color del texto */
-    text-align: center; /* Centra el texto */
-    padding: 10px 20px; /* Espaciado interno */
-    font-size: 16px; /* Tamaño de texto */
+    background-color: #98adb6;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
 }
 
-/* Estilos generales para el formulario */
 form {
-    max-width: 600px; /* Limitar el ancho del formulario */
-    margin: 50px auto; /* Centrar el formulario en la página */
-    padding: 20px; /* Espaciado interno */
-    background-color: #f7fcfd; /* Fondo claro */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
-    font-size: 18px; /* Tamaño de fuente más grande */
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f7fcfd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
 }
 
-/* Etiquetas */
 form label {
-    display: block; /* Cada etiqueta ocupa una línea */
-    margin-bottom: 8px; /* Espacio entre la etiqueta y el campo */
-    font-weight: bold; /* Resaltar las etiquetas */
-    color: #404549; /* Color de texto */
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #404549;
 }
 
-/* Campos de entrada */
 form input[type="text"],
 form input[type="email"],
 form textarea {
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    padding: 10px; /* Espaciado interno */
-    margin-bottom: 20px; /* Espacio entre los campos */
-    border: 1px solid #ccd0d4; /* Bordes */
-    border-radius: 5px; /* Bordes redondeados */
-    font-size: 16px; /* Tamaño de fuente */
-    transition: border-color 0.3s ease; /* Animación de los bordes */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccd0d4;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
 }
 
-/* Cambia el borde al enfocar */
 form input:focus,
 form textarea:focus {
-    border-color: #66a1f2; /* Color del borde al enfocar */
-    outline: none; /* Quitar el borde azul por defecto */
+    border-color: #66a1f2;
+    outline: none;
 }
 
-/* Estilo para los enlaces de compañeros */
 .nav-links2 {
-    list-style: none; /* Quitar los puntos de lista */
-    display: grid; /* Usar Grid para distribución */
-    grid-template-columns: repeat(3, 1fr); /* Crear 3 columnas iguales */
-    gap: 300px 450px; /* Espaciado entre los elementos */
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px 300px;
     padding: 0;
-    justify-content: center; /* Centrar los enlaces horizontalmente */
-    margin: 30px auto; /* Espaciado y centrado */
-    max-width: 800px; /* Limitar el ancho total */
+    justify-content: center;
+    margin: 30px auto;
+    max-width: 800px;
 }
 
-/* Estilo para los elementos individuales */
 .nav-links2 li {
-    text-align: center; /* Centrar el texto dentro de cada celda */
+    text-align: center;
 }
 
-/* Evitar que el texto de los enlaces se divida */
 .nav-links2 a {
-    font-size: 700; /* Negrita */
-    color: #1e2429; /* Mismo color que los enlaces del menú */
-    text-decoration: none; /* Sin subrayado */
-    white-space: nowrap; /* Impide que el texto se divida en varias líneas */
-    transition: color 0.3s ease, transform 0.3s ease; /* Animaciones */
+    font-size: 700;
+    color: #1e2429;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Hover en los enlaces */
 .nav-links2 a:hover {
-    color: #f5f0f0; /* Color más oscuro al pasar el ratón */
-    transform: scale(1.1); /* Agrandar ligeramente */
+    color: #f5f0f0;
+    transform: scale(1.1);
 }
 
 .link-fii {
-    text-decoration: none; /* Quitar el subrayado */
-    color: white; /* Color blanco */
-    transition: color 0.3s ease, transform 0.3s ease; /* Animación suave para el color */
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Estilo al pasar el cursor (hover) sobre el enlace */
-.link-fii {
-    color: #f1f1f1; /* Color ligeramente más claro cuando el ratón pasa por encima */
-    transform: scale(1.05); /* Leve aumento de tamaño */
+.link-fii:hover {
+    color: #f1f1f1;
+    transform: scale(1.05);
 }
 
 main ul {
-    list-style-type: none; /* Eliminar los puntos de la lista */
-    padding-left: 0; /* Eliminar el margen izquierdo de la lista */
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.listainicio {
+    margin-top: 40px;
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.listainicio li {
+    margin-bottom: 10px;
+}
+
+.parinicio {
+    font-size: 25px;
+}
+
+.parinicio2 {
+    margin-top: 10px;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.links-logos {
+    
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.links-logos li {
+    display: inline-block;
+}
+
+.links-logos a img {
+    margin-top: 40px;
+    height: 200px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.links-logos a img:hover {
+    transform: scale(1.1);
+}
+
+.p1{
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.h3- {
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-left: 20px; /* Espaciado desde el borde izquierdo */
+}
+
+.companion-photo {
+    width: 350px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantén la proporción */
+    margin-top: 10px; /* Espaciado entre el nombre y la foto */
+    border-radius: 8px; /* Esquinas redondeadas para las imágenes */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras para un efecto visual */
+    transition: transform 0.3s ease;
+}
+
+.companion-photo:hover {
+    transform: scale(1.1); /* Efecto al pasar el cursor */
 }
