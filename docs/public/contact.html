@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="../CSS/styles.css">
 </head>
 <body>
-    <header>
+    <header class="header">
+        <div class="logo">    
+            <a href="../index.html"><img src="../imagenes/logo3.png" alt="Logo" class="logo"></a>
+        </div>
         <h1>Mi Sitio Web</h1>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="about.html">Acerca de Mí</a></li>
                 <li><a href="topic.html">Tema</a></li>
@@ -30,13 +33,13 @@
             <input type="email" id="email" name="email" required>
             
             <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
             
             <button type="submit" disabled>Enviar</button>
         </form>
     </main>
     <footer>
-        <p>&copy; 2024 Mi Sitio Web</p>
+        <p>&copy; Jorge Estévez</p>
     </footer>
 </body>
 </html>
